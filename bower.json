@@ -1,0 +1,22 @@
+{
+  "name": "moravitali",
+  "authors": [
+    "smarbos <smarbos@gmail.com>"
+  ],
+  "description": "mora vitali website",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "normalize.css#~3.0.3",
+    "angular-ui-router": "~0.2.15"
+  }
+}
