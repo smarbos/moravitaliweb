@@ -14,7 +14,11 @@ moravitaliApp.config(function($stateProvider, $urlRouterProvider) {
 
     $stateProvider
 
-
+        .state('body', {
+            url: '/',
+            controller: 'body',
+            abstract: true
+        })
         .state('main', {
             url: '/main',
             controller: 'main',
@@ -22,7 +26,7 @@ moravitaliApp.config(function($stateProvider, $urlRouterProvider) {
         })
         .state('portfolio', {
             controller: 'portfolio',
-            url: '/portfolio',
+            url: '/portfolio/:selection',
             templateUrl: 'views/portfolio.html'
         })
         .state('lovestory', {

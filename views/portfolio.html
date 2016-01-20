@@ -1,1 +1,20 @@
-<div class="row" id="galeria" ui-view></div>
+<div class="row" id="galeria">
+    <div class="col-sm-6 imagen" ng-repeat="slide in slides">
+        <div class="row">
+            <div class="col-sm-12">
+                <img ng-src="{{ slide.imagen }}" alt="" width="" height="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-right">
+                <h5>{{ slide.titulo }}</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-right">
+                <h6>Some text</h6>
+            </div>
+        </div>
+    </div>
+
+</div>

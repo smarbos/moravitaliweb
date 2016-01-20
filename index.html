@@ -34,7 +34,7 @@
                             <span ng-click="showChilds(item)"><a ui-sref="{{item.ref}}"><strong>{{item.name | capitalize }}</strong></a></span>
                             <ul>
                                 <li ng-repeat="subItem in item.subItems" ng-show="item.active">
-                                    <span><a ui-sref="{{subItem.ref}}">{{subItem.name | capitalize}}</a></span>
+                                    <span><a ui-sref="portfolio({ selection: subItem.ref})">{{subItem.name | capitalize}}</a></span>
                                 </li>
                             </ul>
                         </li>

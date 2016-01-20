@@ -3,6 +3,7 @@
 moravitaliApp.controller('body', ['$scope', '$location',
     function ($scope, $location) {
 
+
             $scope.mainTitle = "Mora Vitali Fotografa.";
 
             $scope.showChilds = function(item){
@@ -147,7 +148,6 @@ moravitaliApp.controller('body', ['$scope', '$location',
 
 moravitaliApp.controller('main', ['$scope', '$location',
     function ($scope, $location) {
-
         function centerPlease(element,margin){
             element.load(function(){
                 var windowHeight = $(window).height();
@@ -170,39 +170,27 @@ moravitaliApp.controller('main', ['$scope', '$location',
         position: "relative",
         top: margin + "px",
         left: (margin) + "px"
-    }).show();
+        }).show();
+
 
     }
 ]);
 
-moravitaliApp.controller('portfolio', ['$scope', '$location',
-    function ($scope, $location) {
+moravitaliApp.controller('portfolio', ['$scope', '$location', '$stateParams',
+    function ($scope, $location, $stateParams) {
+        console.log($stateParams);
         function centerPlease(element,margin){
-            console.log(element);
-
                 var windowHeight = $(window).height();
-                console.log('windowHeight');
-                console.log(windowHeight);
                 var windowWidth = $(window).width();
-                console.log('windowWidth');
-                console.log(windowWidth);
                 if(windowWidth<1600){
                     margin = margin*2;
                 }
                 var maxHeight = windowHeight-(margin*2);
                 element.height(maxHeight+'px');
                 var imageHeight = element.height();
-                console.log('imageHeight');
-                console.log(imageHeight);
                 var imageWidth = element.width();
-                console.log('imageWidth');
-                console.log(imageWidth);
                 var marginAlto = (windowHeight - imageHeight)/2;
-                console.log('marginAlto');
-                console.log(marginAlto);
                 var marginAncho = (windowWidth - imageWidth)/2;
-                console.log('marginAncho');
-                console.log(marginAncho);
                 element.offset({ top: marginAlto, left: marginAncho})
         }
         var margin = "50";
