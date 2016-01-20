@@ -1,0 +1,54 @@
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+body h1{
+    font-weight: bold;
+}
+#mainContent{
+    overflow-x: scroll;
+}
+#sideMenu ul {
+    padding:0px;
+    text-decoration: none;
+    list-style-type: none;
+    color:inherit;
+}
+#sideMenu #menuItems {
+    margin-top: 20px;
+    line-height: 3vh;
+}
+#sideMenu #menuItems ul li{
+    padding-left: 20px;
+}
+a, a:hover, a:active, a:visited, a:link{
+    text-decoration: none;
+    color:black;
+}
+
+.content{
+}
+#mainImg{
+    display: block;
+    position: relative;
+}
+#contacto{
+    text-align: left;
+}
+#sideMenu h1{
+    margin:0px;
+}
+
+.imagen img{
+    background-color: red;
+    width: 800px;
+}
+#galeria{
+    display: inline-flex;
+}
+#galeria .imagen h5{
+    padding-right:20px;
+    padding-top: 20px;
+}
+#galeria .imagen h6{
+    padding-right:20px;
+}
