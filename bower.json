@@ -17,6 +17,9 @@
   ],
   "dependencies": {
     "normalize-css": "normalize.css#~3.0.3",
-    "angular-ui-router": "~0.2.15"
+    "angular-ui-router": "~0.2.15",
+    "jquery": "~2.2.0",
+    "bootstrap": "~3.3.6",
+    "underscore": "~1.8.3"
   }
 }
