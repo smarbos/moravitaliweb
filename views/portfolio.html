@@ -1,20 +1,39 @@
 <div class="row" id="galeria">
-    <div class="col-sm-6 imagen" ng-repeat="slide in slides">
-        <div class="row">
-            <div class="col-sm-12">
-                <img ng-src="{{ slide.imagen }}" alt="" width="" height="">
+    <div ng-repeat="slide in slides">
+        <div ng-if="slide.type === 'img'" class="col-sm-6 slide image">
+            <div class="row">
+                <div class="col-sm-12">
+                    <img ng-src="{{ slide.content }}" alt="" width="" height="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-right">
+                    <h5>{{ slide.titulo }}</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-right">
+                    <h6>Some text</h6>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-12 text-right">
-                <h5>{{ slide.titulo }}</h5>
+        <div ng-if="slide.type === 'txt'" class="col-sm-6 slide text">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>{{ slide.titulo }}</h2>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 text-right">
-                <h6>Some text</h6>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>{{ slide.content }}</p   >
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12 text-right">
+                    <h4>Some text</h4>
+                </div>
             </div>
         </div>
     </div>
-
 </div>

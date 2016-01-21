@@ -28,10 +28,15 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-2" id="sideMenu">
-                    <a ui-sref="main"><h1>Mora Vitali</h1></a>
+                    <h1><a ui-sref="main">Mora Vitali</a></h1>
                     <ul id="menuItems">
                         <li ng-repeat="item in items">
-                            <span ng-click="showChilds(item)"><a ui-sref="{{item.ref}}"><strong>{{item.name | capitalize }}</strong></a></span>
+                            <span ng-if="item.ref" ng-click="showChilds(item)">
+                                <strong><a ui-sref="{{item.ref}}">{{item.name | capitalize }}</a></strong>
+                            </span>
+                            <span  ng-if="!item.ref" ng-click="showChilds(item)">
+                                <strong>{{item.name | capitalize }}</strong>
+                            </span>
                             <ul>
                                 <li ng-repeat="subItem in item.subItems" ng-show="item.active">
                                     <span><a ui-sref="portfolio({ selection: subItem.ref})">{{subItem.name | capitalize}}</a></span>

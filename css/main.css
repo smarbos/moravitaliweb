@@ -5,8 +5,19 @@ body h1{
     font-weight: bold;
 }
 #mainContent{
+    top:50px;
+    left:317px;
+    /*background-color: rgba(187, 118, 139, 0.57);*/
     overflow-x: auto;
 }
+#sideMenu {
+    position: fixed;
+    top:50px;
+    padding-left:50px;
+    /*background-color: rgba(118, 119, 187, 0.57);*/
+
+}
+
 #sideMenu ul {
     padding:0px;
     text-decoration: none;
@@ -31,24 +42,35 @@ a, a:hover, a:active, a:visited, a:link{
     display: block;
     position: relative;
 }
-#contacto{
-    text-align: left;
-}
-#sideMenu h1{
-    margin:0px;
-}
 
-.imagen img{
+
+.slide.text{
+    min-width: 415px;
+    max-width: 415px;
+    padding: 50px;
+    width: 415px;
+}
+.slide.imagen{
+    min-width: 800px;
+    max-width: 800px;
+}
+.slide img{
     background-color: red;
     width: 800px;
+}
+#bio{
+    overflow: hidden;
+}
+#contacto{
+    text-align: left;
 }
 #galeria{
     display: inline-flex;
 }
-#galeria .imagen h5{
+#galeria .slide h5{
     padding-right:20px;
     padding-top: 20px;
 }
-#galeria .imagen h6{
+#galeria .slide h6{
     padding-right:20px;
 }
