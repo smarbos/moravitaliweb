@@ -1,21 +1,29 @@
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+html {
+    margin-left: -1px;
+}
+}
 body{
     font-family: 'Varela Round', sans-serif;
 }
 body h1{
     font-weight: bold;
 }
-#mainContent{
+#wraper{
+    margin-top:70px;
     top:50px;
+    position: relative;
+}
+#mainContent{
     left:317px;
-    /*background-color: rgba(187, 118, 139, 0.57);*/
-    overflow-x: auto;
 }
 #sideMenu {
+    min-width: 279px;
+    z-index: 999;
+    background-color: white;
     position: fixed;
     top:50px;
     padding-left:50px;
-    /*background-color: rgba(118, 119, 187, 0.57);*/
-
 }
 
 #sideMenu ul {
@@ -44,25 +52,20 @@ a, a:hover, a:active, a:visited, a:link{
 }
 
 
-.slide.text{
-    min-width: 415px;
-    max-width: 415px;
-    padding: 50px;
-    width: 415px;
-}
-.slide.imagen{
-    min-width: 800px;
-    max-width: 800px;
-}
-.slide img{
-    background-color: red;
-    width: 800px;
-}
+
 #bio{
     overflow: hidden;
 }
 #contacto{
     text-align: left;
+}
+#galeria .slide{
+    width: auto;
+    margin: 5px;
+    min-width: 20vw;
+}
+#galeria .slide img{
+    max-height: 70vh;
 }
 #galeria{
     display: inline-flex;
