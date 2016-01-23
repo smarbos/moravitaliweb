@@ -20,6 +20,7 @@
     "angular-ui-router": "~0.2.15",
     "jquery": "~2.2.0",
     "bootstrap": "~3.3.6",
-    "underscore": "~1.8.3"
+    "underscore": "~1.8.3",
+    "jquery-mousewheel": "https://github.com/jquery/jquery-mousewheel/archive/3.1.13.tar.gz"
   }
 }
