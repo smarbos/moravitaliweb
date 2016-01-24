@@ -1,4 +1,4 @@
-<div class="row" id="bio">
+<div class="row" id="cv">
     <div class="col-sm-6 imagen">
         <div class="row">
             <div class="col-sm-12">
@@ -8,9 +8,9 @@
         <div class="row">
             <div class="col-sm-12">
                 <ul>
-                    <li>
-                        <time datetime="anio-muestra">anio-muestra</time>
-                        texto-muestra
+                    <li ng-repeat="muestra in muestras">
+                        <time datetime="{{ muestra.anio }}" class="anio-muestra">{{ muestra.anio }}</time>&nbsp;{{ muestra.nombre }}
+                        <a ng-if="muestra.link" href="muestra.link" target="_blank">Visitar link</a>
                     </li>
                 </ul>
             </div>

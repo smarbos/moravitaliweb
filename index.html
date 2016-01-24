@@ -27,17 +27,18 @@
         <script src="js/controllers.js"></script>
     </head>
     <body ng-controller="body">
+        <title>{{ pageTitle }}</title>
         <div class="container-fluid" id="wraper">
             <div class="row">
                 <div class="col-sm-2" id="sideMenu">
                     <h1><a ui-sref="main">Mora Vitali</a></h1>
                     <ul id="menuItems">
-                        <li ng-repeat="item in items">
+                        <li ng-repeat="item in items" class="menuItem">
                             <span ng-if="item.ref" ng-click="showChilds(item)">
                                 <strong><a ui-sref="{{item.ref}}">{{item.name | capitalize }}</a></strong>
                             </span>
                             <span  ng-if="!item.ref" ng-click="collapsePortfolio()">
-                                <strong>{{item.name | capitalize }}</strong>
+                                <strong><a>{{item.name | capitalize }}</a></strong>
                             </span>
                             <ul id="menuPortfolios">
                                 <li ng-if="item.subMenu" ng-repeat="subItem in item.subItems">

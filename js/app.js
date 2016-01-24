@@ -40,7 +40,8 @@ moravitaliApp.config(function($stateProvider, $urlRouterProvider) {
         })
         .state('cv', {
             url: '/cv',
-            templateUrl: 'views/cv.html'
+            templateUrl: 'views/cv.html',
+            controller: 'cv'
         })
         .state('contacto', {
             url: '/contacto',
