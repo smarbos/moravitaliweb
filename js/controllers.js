@@ -20,18 +20,13 @@ moravitaliApp.controller('body', ['$scope', '$location',
         element.css({
             height: result
         });
-        console.log(element.height());
-
-
+        
+        $scope.collapsePortfolio = function(){
+            $(this).show();
+            $('#menuPortfolios').slideToggle("slow");
+        }
 
             $scope.mainTitle = "Mora Vitali Fotografa.";
-
-            $scope.showChilds = function(item){
-            if(item.subMenu){
-            item.active = !item.active;
-            }
-
-            };
 
             $scope.items = [
             {

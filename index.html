@@ -36,11 +36,11 @@
                             <span ng-if="item.ref" ng-click="showChilds(item)">
                                 <strong><a ui-sref="{{item.ref}}">{{item.name | capitalize }}</a></strong>
                             </span>
-                            <span  ng-if="!item.ref" ng-click="showChilds(item)">
+                            <span  ng-if="!item.ref" ng-click="collapsePortfolio()">
                                 <strong>{{item.name | capitalize }}</strong>
                             </span>
-                            <ul>
-                                <li ng-if="item.subMenu" ng-repeat="subItem in item.subItems" ng-show="item.active">
+                            <ul id="menuPortfolios">
+                                <li ng-if="item.subMenu" ng-repeat="subItem in item.subItems">
                                     <span><a ui-sref="portfolio({ selection: subItem.ref})">{{subItem.name | capitalize}}</a></span>
                                 </li>
                             </ul>
