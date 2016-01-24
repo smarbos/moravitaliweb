@@ -1,0 +1,96 @@
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    html {
+        margin-left: -1px;
+    }
+}
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+body h1{
+    font-weight: bold;
+}
+#wraper{
+    margin-top:70px;
+    top:50px;
+    position: relative;
+}
+#mainContent{
+    left:317px;
+}
+#sideMenu {
+    min-width: 279px;
+    z-index: 999;
+    background-color: white;
+    position: fixed;
+    top:50px;
+    padding-left:50px;
+    #menuItems {
+        margin-top: 20px;
+        line-height: 3vh;
+        ul li{
+            padding-left: 20px;
+        }
+        .menuItem a{
+            cursor: pointer;
+        }
+    }
+    ul {
+        padding:0px;
+        text-decoration: none;
+        list-style-type: none;
+        color:inherit;
+    }
+    #menuPortfolios{
+        display: none;
+    }
+}
+
+
+a, a:hover, a:active, a:visited, a:link{
+    text-decoration: none;
+    color:black;
+}
+
+#mainImg{
+    display: block;
+    position: relative;
+}
+
+
+#cv .anio-muestra{
+    font-weight: bold;
+    ul {
+        margin-top: 20px;
+        padding: 0;
+        text-decoration: none;
+        list-style-type: none;
+        color:inherit;
+        li {
+            margin-bottom: 20px;
+        }
+    }
+}
+#bio{
+    overflow: hidden;
+}
+#contacto{
+    text-align: left;
+}
+#galeria{
+    display: inline-flex;
+    .slide{
+        width: auto;
+        margin: 5px;
+        min-width: 20vw;
+        img{
+            max-height: 70vh;
+        }
+        h5{
+            padding-right:20px;
+            padding-top: 20px;
+        }
+        h6{
+            padding-right:20px;
+        }
+    }
+}
